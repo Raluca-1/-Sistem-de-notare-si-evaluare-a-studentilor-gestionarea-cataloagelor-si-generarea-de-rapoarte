@@ -4,7 +4,7 @@ Tema: Sistem de notare și evaluare a studenților – gestionarea cataloagelor 
 Student: Badea Raluca-Maria
 Specializare: CTI, an 2
 
-📌 Descriere generală
+ Descriere generală
 
 Aplicația reprezintă un sistem de gestionare a studenților și notelor acestora. Programul permite introducerea studenților în catalog, adăugarea notelor, afișarea situației generale și generarea de rapoarte simple bazate pe informațiile introduse. Aplicația este realizată în C++ și funcționează prin intermediul unei interfețe text-based, utilizând un meniu interactiv.
 
@@ -85,7 +85,7 @@ Utilizatorul alege opțiuni prin tastare (1, 2, 3…).
 
 Pentru moment, proiectul folosește un singur fișier:
 
-✔️ main.cpp
+ main.cpp
 
 Conține structura Student.
 
