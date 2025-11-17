@@ -65,8 +65,6 @@ Cod viitor: funcții suplimentare
 
  Roluri utilizatori
 
-Acum proiectul tău nu are roluri diferite, dar dacă vrei să îl extinzi, poți avea:
-
 Administrator – gestionează toți studenții și notele.
 
 Profesor – adaugă și actualizează note.
