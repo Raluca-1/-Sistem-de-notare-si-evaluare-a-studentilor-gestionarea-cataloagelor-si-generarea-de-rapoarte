@@ -52,7 +52,7 @@ Cod în: main.cpp → în funcția main()
 Mesaje de atenționare atunci când studentul nu este găsit.
 Cod în: main.cpp → adaugaNote()
 
-5. Extensii viitoare (opționale)
+5. Extensii viitoare
 
 Salvarea catalogului în fișiere externe.
 Fișier viitor: students.txt
@@ -71,7 +71,7 @@ Profesor – adaugă și actualizează note.
 
 Student – își vede notele.
 
-Deocamdată, toate rolurile sunt într-un singur program (un singur meniu).
+Toate rolurile sunt într-un singur program (un singur meniu).
 
  Tip interfață
 
