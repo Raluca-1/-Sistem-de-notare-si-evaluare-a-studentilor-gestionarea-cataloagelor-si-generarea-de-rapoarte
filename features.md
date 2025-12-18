@@ -14,34 +14,34 @@ Scopul sistemului este de a ușura administrarea notelor, vizualizarea performan
 1. Gestionarea studenților
 
 Adăugarea unui student nou (nume, prenume, grupă, semigrupă).
-Cod în: main.cpp → funcția adaugaStudent()
+ → funcția adaugaStudent()
 
 Vizualizarea listei tuturor studenților din catalog.
-Cod în: main.cpp → funcția afiseazaCatalog()
+ → funcția afiseazaCatalog()
 
 Căutarea unui student după nume pentru a-i accesa datele.
-Cod în: main.cpp → în funcția adaugaNote() (partea de căutare)
+ → în funcția adaugaNote() (partea de căutare)
 
 2. Gestionarea notelor
 
 Adăugarea de note unui student existent în catalog.
-Cod în: main.cpp → funcția adaugaNote()
+ → funcția adaugaNote()
 
 Afișarea notelor unui student.
-Cod în: main.cpp → funcția afiseazaNote()
+ → funcția afiseazaNote()
 
 Calcularea mediilor (funcționalitate ce poate fi adăugată ulterior).
-Loc viitor: main.cpp → o funcție calculeazaMedie(student)
+ → o funcție calculeazaMedie(student)
 
 3. Generarea rapoartelor
 
 Afișarea catalogului complet (toți studenții și notele lor).
-Cod în: main.cpp → funcția afiseazaCatalog()
+ → funcția afiseazaCatalog()
 
 Raport simplu pentru fiecare student (nume, grupă, note).
-Cod în: main.cpp
 
-Posibilitatea extinderii pentru: top studenți, restanțieri, statistici.
+
+Posibilitatea extinderii pentru: bursieri, restanțieri.
 Loc viitor: funcții noi în main.cpp sau fișiere separate.
 
 4. Interacțiunea cu utilizatorul
@@ -50,28 +50,21 @@ Meniu principal interactiv cu opțiuni pentru acțiunile principale.
 Cod în: main.cpp → în funcția main()
 
 Mesaje de atenționare atunci când studentul nu este găsit.
-Cod în: main.cpp → adaugaNote()
+ → adaugaNote()
 
 5. Extensii viitoare
 
-Salvarea catalogului în fișiere externe.
-Fișier viitor: students.txt
-
-Încărcarea datelor de la pornirea aplicației.
-Fișier viitor: students.txt
-
-Statistici: medii, restanțieri, ordine descrescătoare.
+Statistici: medii, restanțieri.
 Cod viitor: funcții suplimentare
 
  Roluri utilizatori
 
-Administrator – gestionează toți studenții și notele.
+Administrator – gestionează toți studenții.
 
 Profesor – adaugă și actualizează note.
 
 Student – își vede notele.
-
-Toate rolurile sunt într-un singur program (un singur meniu).
+.
 
  Tip interfață
 
@@ -81,14 +74,6 @@ Utilizatorul alege opțiuni prin tastare (1, 2, 3…).
 
  Structura fișierelor
 
-Pentru moment, proiectul folosește un singur fișier:
-
- main.cpp
-
-Conține structura Student.
-
-Conține vectorul global catalog.
 
 Include toate funcțiile: adaugaStudent(), adaugaNote(), afiseazaCatalog(), afiseazaNote().
 
-Include meniul principal și logica programului.
