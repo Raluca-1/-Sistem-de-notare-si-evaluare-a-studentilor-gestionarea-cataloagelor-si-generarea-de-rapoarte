@@ -7,31 +7,31 @@ Funcționalități:
 
 Administrator:
 
-Vizualizează catalogul complet al studenților.
+1.Vizualizează catalogul complet al studenților.
 
-Adaugă și șterge studenți.
+2.Adaugă și șterge studenți.
 
-Vizualizează lista restantierilor și bursierilor.
+3.Vizualizează lista restantierilor și bursierilor.
 
 Profesor:
 
-Vizualizează catalogul.
+1.Vizualizează catalogul.
 
-Căutare student după nume.
+2.Căutare student după nume.
 
-Adaugă note pentru studenți.
+3.Adaugă note pentru studenți.
 
-Vizualizează restantierii.
+4.Vizualizează restantierii.
 
 Student:
 
-Vizualizează notele proprii.
+1.Vizualizează notele proprii.
 
-Calculează media generală.
+2.Calculează media generală.
 
-Verifică dacă este restantier.
+3.Verifică dacă este restantier.
 
-Verifică dacă este bursier.
+4.Verifică dacă este bursier.
 
 Structura Proiectului
 Fișiere:
@@ -50,41 +50,41 @@ Comenzi disponibile:
 
 Administrator:
 
-Afișează catalogul studenților.
+1.Afișează catalogul studenților.
 
-Adaugă un student.
+2.Adaugă un student.
 
-Șterge un student.
+3.Șterge un student.
 
-Afișează restantierii.
+4.Afișează restantierii.
 
-Afișează bursierii.
+5.Afișează bursierii.
 
-Iesire.
+6.Iesire.
 
 Profesor:
 
-Afișează catalogul studenților.
+1.Afișează catalogul studenților.
 
-Căutare student după nume.
+2.Căutare student după nume.
 
-Adaugă note studentului.
+3.Adaugă note studentului.
 
-Afișează restantierii.
+4.Afișează restantierii.
 
-Iesire.
+5.Iesire.
 
 Student:
 
-Afișează notele studentului.
+1.Afișează notele studentului.
 
-Afișează media generală.
+2.Afișează media generală.
 
-Verifică dacă este restantier.
+3.Verifică dacă este restantier.
 
-Verifică dacă este bursier.
+4.Verifică dacă este bursier.
 
-Iesire.
+5.Iesire.
 
 Structura datelor
 Clasa Student
@@ -95,7 +95,7 @@ id: Un ID unic pentru fiecare student (generat automat).
 
 nume: Numele studentului.
 
-grupa: Grupa studentului.
+grupa: Grupa studentului (1, 2, 3).
 
 semigrupa: Semigrupa studentului (A, B, C, D).
 
