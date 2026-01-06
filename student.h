@@ -11,28 +11,29 @@ class Student {
 private:
     static int nextId; // Variabila statică pentru ID-ul unic
     int id; //ID-ul unic al studentului
-    string nume;
-    int grupa;
-    char semigrupa;
-    vector<int>note;
+    string name; //Numele studentului
+    int group; //Grupa studentului
+    char subgroup; //Semigrupa studentului
+    vector<int>grades; //Vector care contine notele studentului
 
 public:
-    Student(string nume = " ", int grupa = 0, char semigrupa = 'A', vector<int>note = {});
+    //Constructor - initializeaza atributele clasei student 
+    Student(string name = " ", int group = 0, char subgroup = 'A', vector<int>grades = {});
 
-    //Metode
-    void adaugaNota(int nota);
+    //Functii
+    void addGrade(int grade); //Adauga o nota la vectorul de note al studentului
 
-    float medie() const;
+    float average() const; //Calculeaza si returneaza media notelor studentului, daca nu are note returneaza 0
 
-    bool esteRestantier() const;
-    bool esteBursier() const;
+    bool isFailing() const; //Verifica daca studentul are vreo nota mai mica decat 5
+    bool isScholar() const; //Verifica daca studentul are media >= 8,50 si daca nu are restante
 
-    //Getteri
-    int getId() const;
-    string getNume() const;
-    int getGrupa() const;
-    char getSemigrupa() const;
-    const vector<int>& getNote() const;
+    //Getteri - returneaza valoarea unui atribut privat dintr-o clasa 
+    int getId() const; //Returneaza ID-ul unic al studentului
+    string getName() const; //Returneaza numele studentului
+    int getGroup() const; //Returneaza grupa studentului
+    char getSubgroup() const; //Returneaza semigrupa studentului
+    const vector<int>& getGrades() const; //Returneaza vectorul de note al studentului 
 
 };
 
