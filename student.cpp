@@ -1,42 +1,40 @@
 #include "student.h"
 
-//Initializam ID-ul static pentru studenti
-
-int Student::nextId = 1;
+int Student::nextId = 1; //Genereaza un ID unic pentru fiecare student
 
 //constructorul clasei Student
 
-Student::Student(std::string nume, int grupa, char semigrupa, vector<int>note) : nume(nume), grupa(grupa), semigrupa(semigrupa), note(note) {
-    id = nextId++; // Atribuim un ID unic fiecărui student
+Student::Student(std::string name, int group, char subgroup, vector<int>grades) : name(name), group(group), subgroup(subgroup), grades(grades) {
+    id = nextId++; // Atribuim un ID unic - incrementare cu 1 pentru student nou
 }
 
-void Student::adaugaNota(int nota) {
-    note.push_back(nota);
+    void Student::addGrade(int grade) { //Adauga o nota noua in vectorul note al studentului 
+    grades.push_back(grade); //Adauga valoarea la sfarsitul vectorului
 }
 
-float Student::medie() const {
-    if (note.empty()) {
-        return 0;
+float Student::average() const { //Calculeaza media notelor studentului
+    if (grades.empty()) { //Verifica daca lista de note e goala 
+        return 0; //Daca e goala, returneaza 0, studentul nu are note
     }
-    float suma = 0;
+    float sum = 0;
 
-    for (int n : note) {
-        suma = suma + n;
+    for (int g : grades) { 
+        sum = sum + g;
     }
-    return suma / note.size();
+    return sum / grades.size(); //Returneaza media
 }
 
-bool Student::esteRestantier() const {
-    for (int n : note) {
-        if (n < 5) {
+bool Student::isFailing() const { //Verifica daca studentul este restantier 
+    for (int g : grades) {
+        if (g < 5) {
             return true;
         }
     }
     return false;
 }
 
-bool Student::esteBursier() const {
-    if (medie() >= 8.50 && !esteRestantier()) {
+bool Student::isScholar() const { //Verifica daca studentul este bursier
+    if (average() >= 8.50 && !isFailing()) { 
         return true;
     }
     else {
@@ -44,24 +42,24 @@ bool Student::esteBursier() const {
     }
 }
 
-//Getteri 
+//Getteri - returneaza valoarea unui atribut privat dintr-o clasa
 
 int Student::getId() const {
-    return id;
+    return id; //Returneaza ID-ul studentului
 }
 
-std::string Student::getNume() const {
-    return nume;
+std::string Student::getName() const { //Returneaza numele studentului
+    return name;
 }
 
-int Student::getGrupa() const {
-    return grupa;
+int Student::getGroup() const { //Returneaza grupa studentului
+    return group;
 }
 
-char Student::getSemigrupa() const {
-    return semigrupa;
+char Student::getSubgroup() const { //Returneaza semigrupa studentului
+    return subgroup;
 }
 
-const std::vector<int>& Student::getNote() const {
-    return note;
+const std::vector<int>& Student::getGrades() const { //Returneaza referinta constanta la vectorul de note al studentului, permitand doar citirea, nu modificarea
+    return grades;
 }
