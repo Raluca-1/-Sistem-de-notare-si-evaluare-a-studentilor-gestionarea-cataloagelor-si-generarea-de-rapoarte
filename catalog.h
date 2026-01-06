@@ -1,4 +1,4 @@
-#ifndef CATALOG_H
+#ifndef CATALOG_H //Aceste directive sunt folosite pentru a evita includerea multiplă a aceluiasi fisier de antet (header) în timpul compilării.
 #define CATALOG_H
 
 #include<iostream>
@@ -8,32 +8,24 @@
 
 class Catalog {
 private:
-    std::vector<Student> studenti; //acesta va contine lista tuturor studentilor din catalog
+    std::vector<Student> students; //Acesta va contine lista tuturor studentilor din catalog
 
 public:
-    //Adauga un student in catalog
-    void adaugaStudent(const Student& student);
+    void addStudent(const Student& student); //Adauga un student in catalog, primeste obiectul de tip Student pe care il adauga in vectorul students
 
-    //Sterge un student dupa ID
-    void stergeStudent(int id);
+    void deleteStudent(int id); //Sterge un student din catalog dupa ID
 
-    //Cauta student dupa nume
-    Student* cautaStudentDupaNume(const std::string& nume);
+    Student* searchStudentByName(const std::string& name); //Cauta un student dupa nume si returneaza un pointer catre obiectul student gasit 
 
-    //Afisare intreg catalog
-    void afiseazaCatalog() const;
+    void displayCatalog() const; //Afisare intreg catalog
 
-    //Afisare studenti restantieri
-    void afiseazaRestantieri() const;
+    void displayFailingStudents() const; //Afisare studenti restantieri
 
-    //Afiseaza bursieri
-    void afiseazaBursieri() const;
+    void displayScholarshipStudents() const; //Afiseaza bursieri
 
-    //Sortare studenti dupa medie
-    void sorteazaDupaMedie();
+    void sortStudentsByAverage(); //Sortare studenti dupa medie
 
-    //Initializare 10 studenti pentru testare
-    void initStudenti();
+    void initStudents(); //Initializare 10 studenti pentru testare
 
 };
 
